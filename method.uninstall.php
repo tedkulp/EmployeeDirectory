@@ -35,5 +35,7 @@ $dict->ExecuteSQLArray($sqlarray);
 $sqlarray = $dict->DropTableSQL(cms_db_prefix()."module_employee_directory_employees");
 $dict->ExecuteSQLArray($sqlarray);
 
+$this->DeleteTemplate();
+
 // put mention into the admin log
 $this->Audit(0, $this->Lang('friendlyname'), $this->Lang('uninstalled'));

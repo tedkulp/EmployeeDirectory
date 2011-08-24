@@ -71,6 +71,11 @@ class EmployeeDirectory extends CGExtensions
 		return "1.9";
 	}
 
+	function GetAdminSection()
+	{
+		return 'content';
+	}
+
 	function GetDependencies()
 	{
 		return array('CGExtensions' => '1.19.4', 'CMSForms' => '0.0.20');

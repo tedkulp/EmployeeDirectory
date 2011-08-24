@@ -24,3 +24,4 @@ $lang['form_data_extension'] = 'Extension';
 $lang['form_data_email'] = 'Email Address';
 $lang['summarytemplates'] = 'Summary Templates';
 $lang['form_data_office_num'] = 'Office Number';
+$lang['summarytemplate_addedit'] = 'Add/Edit Summary Template';

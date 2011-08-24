@@ -65,5 +65,15 @@ $taboptarray = array('mysql' => 'TYPE=MyISAM');
 $sqlarray = $dict->CreateTableSQL(cms_db_prefix()."module_employee_directory_departments", $flds, $taboptarray);
 $dict->ExecuteSQLArray($sqlarray);
 
+# Setup summary template
+$fn = cms_join_path(dirname(__FILE__),'templates','orig_summary_template.tpl');
+if( file_exists( $fn ) )
+{
+	$template = file_get_contents( $fn );
+	$this->SetPreference(EMP_DIR_PREF_NEWSUMMARY_TEMPLATE,$template);
+	$this->SetTemplate('summary_Sample',$template);
+	$this->SetPreference(EMP_DIR_PREF_DFLTSUMMARY_TEMPLATE,'Sample');
+}
+
 // put mention into the admin log
 $this->Audit(0, $this->Lang('friendlyname'), $this->Lang('installed', $this->GetVersion()));
