@@ -36,6 +36,7 @@ if (isset($params['active_tab']))
 echo $this->StartTabHeaders();
 echo $this->SetTabHeader('employees', $this->Lang('employees'));
 echo $this->SetTabHeader('departments', $this->Lang('departments'));
+echo $this->SetTabHeader('summary_template',$this->Lang('summarytemplates'));
 echo $this->EndTabHeaders();
 
 echo $this->StartTabContent();
@@ -46,6 +47,15 @@ echo $this->EndTab();
 
 echo $this->StartTab('departments');
 include(dirname(__FILE__).'/function.admin_departmentstab.php');
+echo $this->EndTab();
+
+echo $this->StartTab('summary_template', $params);
+echo $this->ShowTemplateList($id,$returnid,'summary_',
+	EMP_DIR_PREF_NEWSUMMARY_TEMPLATE,
+	'summary_template',
+	EMP_DIR_PREF_DFLTSUMMARY_TEMPLATE,
+	$this->Lang('summarytemplate_addedit'),
+	'','admin_templates');
 echo $this->EndTab();
 
 echo $this->EndTabContent();

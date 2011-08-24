@@ -37,6 +37,7 @@ $form_settings->setWidget('data_last_name', 'text', array('value' => $employee['
 $form_settings->setWidget('data_middle_initial', 'text', array('value' => $employee['middle_initial']));
 $form_settings->setWidget('data_position', 'text', array('value' => $employee['position']));
 $form_settings->setWidget('data_extension', 'text', array('value' => $employee['extension']));
+$form_settings->setWidget('data_office_num', 'text', array('value' => $employee['office_num']));
 $form_settings->setWidget('data_email', 'text', array('value' => $employee['email']));
 $form_settings->setWidget('data_website', 'text', array('value' => $employee['website']));
 $form_settings->setWidget('data_department_id', 'select', array('value' => $employee['department_id'], 'values' => $this->GetDepartmentsForSelect()));

@@ -22,3 +22,5 @@ $lang['form_data_middle_initial'] = 'Middle Initial';
 $lang['form_data_position'] = 'Position';
 $lang['form_data_extension'] = 'Extension';
 $lang['form_data_email'] = 'Email Address';
+$lang['summarytemplates'] = 'Summary Templates';
+$lang['form_data_office_num'] = 'Office Number';

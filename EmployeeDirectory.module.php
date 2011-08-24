@@ -26,6 +26,9 @@
 #-------------------------------------------------------------------------
 #-------------------------------------------------------------------------
 
+define('EMP_DIR_PREF_NEWSUMMARY_TEMPLATE','emp_dir_pref_newsummary_template');
+define('EMP_DIR_PREF_DFLTSUMMARY_TEMPLATE','emp_dir_pref_dfltsummary_template');
+
 class EmployeeDirectory extends CGExtensions
 {
 	function EmployeeDirectory()
