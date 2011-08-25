@@ -48,7 +48,7 @@ class EmployeeDirectory extends CGExtensions
 
 	function GetVersion()
 	{
-		return '0.1';
+		return '0.2';
 	}
 
 	function GetAuthor()
